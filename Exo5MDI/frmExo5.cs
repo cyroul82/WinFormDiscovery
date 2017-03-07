@@ -21,5 +21,15 @@ namespace Exo5MDI
         {
 
         }
+
+        private void frmExo5_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            DialogResult rep = MessageBox.Show("Voulez vous vraiment quitter ?", "Terminer ?", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (rep == DialogResult.No)
+            {
+                e.Cancel = true;
+            }
+            
+        }
     }
 }

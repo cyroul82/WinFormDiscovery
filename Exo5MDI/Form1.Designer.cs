@@ -101,18 +101,25 @@
             // 
             // frmExo5ToolStripMenuItem
             // 
+            this.frmExo5ToolStripMenuItem.Checked = true;
+            this.frmExo5ToolStripMenuItem.CheckOnClick = true;
+            this.frmExo5ToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
             this.frmExo5ToolStripMenuItem.Name = "frmExo5ToolStripMenuItem";
             this.frmExo5ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.frmExo5ToolStripMenuItem.Text = "&1 frmExo5";
             // 
             // frmChronoToolStripMenuItem
             // 
+            this.frmChronoToolStripMenuItem.CheckOnClick = true;
             this.frmChronoToolStripMenuItem.Name = "frmChronoToolStripMenuItem";
             this.frmChronoToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.frmChronoToolStripMenuItem.Text = "&2 frmChrono";
+            this.frmChronoToolStripMenuItem.CheckedChanged += new System.EventHandler(this.frmChronoToolStripMenuItem_CheckedChanged);
+            this.frmChronoToolStripMenuItem.Click += new System.EventHandler(this.frmChronoToolStripMenuItem_Click);
             // 
             // frmRandomToolStripMenuItem
             // 
+            this.frmRandomToolStripMenuItem.CheckOnClick = true;
             this.frmRandomToolStripMenuItem.Name = "frmRandomToolStripMenuItem";
             this.frmRandomToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.frmRandomToolStripMenuItem.Text = "&3 frmRandom";
@@ -141,6 +148,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.Text = "Form1";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
