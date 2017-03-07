@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{712B9BEF-DF82-470E-8B17-02C16ABAD71E}</ProjectGuid>
+    <ProjectGuid>{8E0191C5-3495-4F66-9DA9-ABB9F11D74C0}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Exo1</RootNamespace>
-    <AssemblyName>Exo1</AssemblyName>
+    <RootNamespace>Exo3</RootNamespace>
+    <AssemblyName>Exo3</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -46,16 +46,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="frmExo1.cs">
+    <Compile Include="frmExo3.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmExo1.Designer.cs">
-      <DependentUpon>frmExo1.cs</DependentUpon>
+    <Compile Include="frmExo3.Designer.cs">
+      <DependentUpon>frmExo3.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="frmExo1.resx">
-      <DependentUpon>frmExo1.cs</DependentUpon>
+    <EmbeddedResource Include="frmExo3.resx">
+      <DependentUpon>frmExo3.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -78,9 +78,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="MyIcon.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
