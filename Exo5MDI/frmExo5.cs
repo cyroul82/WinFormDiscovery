@@ -32,10 +32,6 @@ namespace Exo5MDI
 
         }
 
-        private void frmExo5_Load(object sender, EventArgs e)
-        {
-
-        }
 
         private void frmExo5_FormClosing(object sender, FormClosingEventArgs e)
         {

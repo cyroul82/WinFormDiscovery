@@ -66,7 +66,7 @@
             // quitterToolStripMenuItem
             // 
             this.quitterToolStripMenuItem.Name = "quitterToolStripMenuItem";
-            this.quitterToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.quitterToolStripMenuItem.Size = new System.Drawing.Size(111, 22);
             this.quitterToolStripMenuItem.Text = "&Quitter";
             // 
             // fenêtreToolStripMenuItem
@@ -107,6 +107,7 @@
             this.frmExo5ToolStripMenuItem.Name = "frmExo5ToolStripMenuItem";
             this.frmExo5ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.frmExo5ToolStripMenuItem.Text = "&1 frmExo5";
+            this.frmExo5ToolStripMenuItem.Click += new System.EventHandler(this.frmExo5ToolStripMenuItem_Click);
             // 
             // frmChronoToolStripMenuItem
             // 
@@ -123,6 +124,7 @@
             this.frmRandomToolStripMenuItem.Name = "frmRandomToolStripMenuItem";
             this.frmRandomToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.frmRandomToolStripMenuItem.Text = "&3 frmRandom";
+            this.frmRandomToolStripMenuItem.Click += new System.EventHandler(this.frmRandomToolStripMenuItem_Click);
             // 
             // toolStripMenuItem1
             // 
@@ -135,10 +137,10 @@
             // aPropsToolStripMenuItem
             // 
             this.aPropsToolStripMenuItem.Name = "aPropsToolStripMenuItem";
-            this.aPropsToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.aPropsToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
             this.aPropsToolStripMenuItem.Text = "&A Propos";
             // 
-            // Form1
+            // frmMdi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -146,7 +148,7 @@
             this.Controls.Add(this.menuStrip1);
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
-            this.Name = "Form1";
+            this.Name = "frmMdi";
             this.Text = "Form1";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.menuStrip1.ResumeLayout(false);

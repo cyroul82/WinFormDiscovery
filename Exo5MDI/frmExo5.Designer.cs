@@ -91,7 +91,6 @@
             this.Name = "frmExo5";
             this.Text = "frmExo5";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmExo5_FormClosing);
-            this.Load += new System.EventHandler(this.frmExo5_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

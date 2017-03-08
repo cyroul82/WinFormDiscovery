@@ -22,21 +22,55 @@ namespace Exo5MDI
             frmPrinc = new frmExo5();
             frmPrinc.MdiParent = this;
             frmPrinc.Show();
-
-            
+    
         }
 
         private void frmChronoToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            if(frmChr != null)
+            {
+                frmChr.Activate();
+            }
+            else
+            {
                 frmChr = new frmChrono();
                 frmChr.MdiParent = this;
                 frmChr.Show();
-            
+            }
+
         }
 
         private void frmChronoToolStripMenuItem_CheckedChanged(object sender, EventArgs e)
         {
             
+        }
+
+        private void frmExo5ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if(frmPrinc != null)
+            {
+                frmPrinc.Activate();
+            }
+            else
+            {
+                frmPrinc = new frmExo5();
+                frmPrinc.MdiParent = this;
+                frmPrinc.Show();
+            }
+        }
+
+        private void frmRandomToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if(frmR != null)
+            {
+                frmR.Activate();
+            }
+            else
+            {
+                frmR = new frmRandom();
+                frmR.MdiParent = this;
+                frmR.Show();
+            }
         }
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
@@ -46,6 +80,9 @@ namespace Exo5MDI
             {
                 e.Cancel = true;
             }
+
         }
+
+        
     }
 }
