@@ -29,16 +29,16 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.labelPhrase1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.labelPhrase2 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.labelPhrase3 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.labelPhrase2 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.labelPhrase1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.checkBoxPhrase1 = new System.Windows.Forms.CheckBox();
-            this.checkBoxPhrase2 = new System.Windows.Forms.CheckBox();
             this.checkBoxPhrase3 = new System.Windows.Forms.CheckBox();
+            this.checkBoxPhrase2 = new System.Windows.Forms.CheckBox();
+            this.checkBoxPhrase1 = new System.Windows.Forms.CheckBox();
             this.labelTextSearch = new System.Windows.Forms.Label();
             this.labelTextOccurence = new System.Windows.Forms.Label();
             this.textBoxLetter = new System.Windows.Forms.TextBox();
@@ -63,21 +63,21 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             // 
-            // labelPhrase1
+            // textBox3
             // 
-            this.labelPhrase1.AutoSize = true;
-            this.labelPhrase1.Location = new System.Drawing.Point(8, 23);
-            this.labelPhrase1.Name = "labelPhrase1";
-            this.labelPhrase1.Size = new System.Drawing.Size(49, 13);
-            this.labelPhrase1.TabIndex = 0;
-            this.labelPhrase1.Text = "Phrase 1";
+            this.textBox3.Location = new System.Drawing.Point(62, 92);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(575, 20);
+            this.textBox3.TabIndex = 5;
             // 
-            // textBox1
+            // labelPhrase3
             // 
-            this.textBox1.Location = new System.Drawing.Point(63, 20);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(574, 20);
-            this.textBox1.TabIndex = 1;
+            this.labelPhrase3.AutoSize = true;
+            this.labelPhrase3.Location = new System.Drawing.Point(7, 95);
+            this.labelPhrase3.Name = "labelPhrase3";
+            this.labelPhrase3.Size = new System.Drawing.Size(49, 13);
+            this.labelPhrase3.TabIndex = 4;
+            this.labelPhrase3.Text = "Phrase 3";
             // 
             // textBox2
             // 
@@ -95,21 +95,21 @@
             this.labelPhrase2.TabIndex = 2;
             this.labelPhrase2.Text = "Phrase 2";
             // 
-            // textBox3
+            // textBox1
             // 
-            this.textBox3.Location = new System.Drawing.Point(62, 92);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(575, 20);
-            this.textBox3.TabIndex = 5;
+            this.textBox1.Location = new System.Drawing.Point(63, 20);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(574, 20);
+            this.textBox1.TabIndex = 1;
             // 
-            // labelPhrase3
+            // labelPhrase1
             // 
-            this.labelPhrase3.AutoSize = true;
-            this.labelPhrase3.Location = new System.Drawing.Point(7, 95);
-            this.labelPhrase3.Name = "labelPhrase3";
-            this.labelPhrase3.Size = new System.Drawing.Size(49, 13);
-            this.labelPhrase3.TabIndex = 4;
-            this.labelPhrase3.Text = "Phrase 3";
+            this.labelPhrase1.AutoSize = true;
+            this.labelPhrase1.Location = new System.Drawing.Point(8, 23);
+            this.labelPhrase1.Name = "labelPhrase1";
+            this.labelPhrase1.Size = new System.Drawing.Size(49, 13);
+            this.labelPhrase1.TabIndex = 0;
+            this.labelPhrase1.Text = "Phrase 1";
             // 
             // groupBox2
             // 
@@ -123,15 +123,15 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Rechercher dans : ";
             // 
-            // checkBoxPhrase1
+            // checkBoxPhrase3
             // 
-            this.checkBoxPhrase1.AutoSize = true;
-            this.checkBoxPhrase1.Location = new System.Drawing.Point(11, 30);
-            this.checkBoxPhrase1.Name = "checkBoxPhrase1";
-            this.checkBoxPhrase1.Size = new System.Drawing.Size(68, 17);
-            this.checkBoxPhrase1.TabIndex = 0;
-            this.checkBoxPhrase1.Text = "Phrase &1";
-            this.checkBoxPhrase1.UseVisualStyleBackColor = true;
+            this.checkBoxPhrase3.AutoSize = true;
+            this.checkBoxPhrase3.Location = new System.Drawing.Point(10, 78);
+            this.checkBoxPhrase3.Name = "checkBoxPhrase3";
+            this.checkBoxPhrase3.Size = new System.Drawing.Size(68, 17);
+            this.checkBoxPhrase3.TabIndex = 2;
+            this.checkBoxPhrase3.Text = "Phrase &3";
+            this.checkBoxPhrase3.UseVisualStyleBackColor = true;
             // 
             // checkBoxPhrase2
             // 
@@ -143,15 +143,15 @@
             this.checkBoxPhrase2.Text = "Phrase &2";
             this.checkBoxPhrase2.UseVisualStyleBackColor = true;
             // 
-            // checkBoxPhrase3
+            // checkBoxPhrase1
             // 
-            this.checkBoxPhrase3.AutoSize = true;
-            this.checkBoxPhrase3.Location = new System.Drawing.Point(10, 78);
-            this.checkBoxPhrase3.Name = "checkBoxPhrase3";
-            this.checkBoxPhrase3.Size = new System.Drawing.Size(68, 17);
-            this.checkBoxPhrase3.TabIndex = 2;
-            this.checkBoxPhrase3.Text = "Phrase &3";
-            this.checkBoxPhrase3.UseVisualStyleBackColor = true;
+            this.checkBoxPhrase1.AutoSize = true;
+            this.checkBoxPhrase1.Location = new System.Drawing.Point(11, 30);
+            this.checkBoxPhrase1.Name = "checkBoxPhrase1";
+            this.checkBoxPhrase1.Size = new System.Drawing.Size(68, 17);
+            this.checkBoxPhrase1.TabIndex = 0;
+            this.checkBoxPhrase1.Text = "Phrase &1";
+            this.checkBoxPhrase1.UseVisualStyleBackColor = true;
             // 
             // labelTextSearch
             // 
@@ -208,6 +208,7 @@
             this.Controls.Add(this.labelTextSearch);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "frmExo2b";
             this.Text = "Form1";
             this.groupBox1.ResumeLayout(false);
