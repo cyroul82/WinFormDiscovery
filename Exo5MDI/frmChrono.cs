@@ -21,7 +21,6 @@ namespace Exo5MDI
 
         private void btnActualiser_Click(object sender, EventArgs e)
         {
-            //frmPrinc.Affiche();
             textBoxChrono.Text = frmPrinc.Chrono.ToString();
         }
 
