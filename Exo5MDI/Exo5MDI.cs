@@ -10,13 +10,13 @@ using System.Windows.Forms;
 
 namespace Exo5MDI
 {
-    public partial class Form1 : Form
+    public partial class Exo5MDI : Form
     {
 
         private frmExo5 frmPrinc;
         private frmChrono frmChr;
         private frmRandom frmR;
-        public Form1()
+        public Exo5MDI()
         {
             InitializeComponent();
             frmPrinc = new frmExo5();

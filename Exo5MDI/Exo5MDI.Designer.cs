@@ -1,6 +1,6 @@
 ﻿namespace Exo5MDI
 {
-    partial class Form1
+    partial class Exo5MDI
     {
         /// <summary>
         /// Required designer variable.

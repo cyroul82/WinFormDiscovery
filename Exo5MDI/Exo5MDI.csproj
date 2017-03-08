@@ -46,11 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="Exo5MDI.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Exo5MDI.Designer.cs">
+      <DependentUpon>Exo5MDI.cs</DependentUpon>
     </Compile>
     <Compile Include="frmChrono.cs">
       <SubType>Form</SubType>
@@ -72,8 +72,8 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="Exo5MDI.resx">
+      <DependentUpon>Exo5MDI.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmChrono.resx">
       <DependentUpon>frmChrono.cs</DependentUpon>
