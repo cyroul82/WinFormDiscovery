@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exo3", "Exo3\Exo3.csproj", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exo5MDI", "Exo5MDI\Exo5MDI.csproj", "{9C42E10E-AA87-48EA-B96E-533830081F95}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Appli1", "Appli1\Appli1.csproj", "{A20E185F-5D45-4134-9D53-88AC214527A9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{9C42E10E-AA87-48EA-B96E-533830081F95}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9C42E10E-AA87-48EA-B96E-533830081F95}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9C42E10E-AA87-48EA-B96E-533830081F95}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A20E185F-5D45-4134-9D53-88AC214527A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A20E185F-5D45-4134-9D53-88AC214527A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A20E185F-5D45-4134-9D53-88AC214527A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A20E185F-5D45-4134-9D53-88AC214527A9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
