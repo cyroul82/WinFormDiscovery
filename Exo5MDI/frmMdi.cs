@@ -96,5 +96,11 @@ namespace Exo5MDI
         {
             Close();
         }
+
+        private void aPropsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AboutBox ab = new AboutBox();
+            ab.ShowDialog();
+        }
     }
 }
