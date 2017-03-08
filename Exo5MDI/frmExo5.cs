@@ -27,8 +27,8 @@ namespace Exo5MDI
             Donnees.LeNombre = aleat.NextDouble();
             textBoxNombreAleatoire.Text = Donnees.LeNombre.ToString();
 
-            Donnees.LeNombre++;
-            textBoxChrono.Text = Donnees.LeNombre.ToString();
+            Donnees.Chrono++;
+            textBoxChrono.Text = Donnees.Chrono.ToString();
         }
 
         private void frmExo5_FormClosing(object sender, FormClosingEventArgs e)

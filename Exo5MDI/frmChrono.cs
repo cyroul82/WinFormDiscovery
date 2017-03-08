@@ -29,7 +29,7 @@ namespace Exo5MDI
 
         private void affiche()
         {
-            textBoxChrono.Text = Donnees.LeTemps.ToString();
+            textBoxChrono.Text = Donnees.Chrono.ToString();
         }
 
         private void frmChrono_Activated(object sender, EventArgs e)

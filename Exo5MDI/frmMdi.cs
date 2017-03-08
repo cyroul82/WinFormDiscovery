@@ -69,7 +69,6 @@ namespace Exo5MDI
                 frmChr = new frmChrono();
                 frmChr.MdiParent = this;
                 frmChr.FormClosing += new FormClosingEventHandler(this.fermeChrono);
-                //frmChr.
                 frmChr.Show();
             }
             frmChr.textBoxChrono.Text = frmPrinc.textBoxChrono.Text;
