@@ -70,9 +70,9 @@
             this.radioButtonVitesseCinqCent.Name = "radioButtonVitesseCinqCent";
             this.radioButtonVitesseCinqCent.Size = new System.Drawing.Size(43, 17);
             this.radioButtonVitesseCinqCent.TabIndex = 3;
-            this.radioButtonVitesseCinqCent.TabStop = true;
             this.radioButtonVitesseCinqCent.Text = "500";
             this.radioButtonVitesseCinqCent.UseVisualStyleBackColor = true;
+            this.radioButtonVitesseCinqCent.CheckedChanged += new System.EventHandler(this.radioButtonVitesseCinqCent_CheckedChanged);
             // 
             // radioButtonVitesseTroisCent
             // 
@@ -81,9 +81,9 @@
             this.radioButtonVitesseTroisCent.Name = "radioButtonVitesseTroisCent";
             this.radioButtonVitesseTroisCent.Size = new System.Drawing.Size(43, 17);
             this.radioButtonVitesseTroisCent.TabIndex = 2;
-            this.radioButtonVitesseTroisCent.TabStop = true;
             this.radioButtonVitesseTroisCent.Text = "300";
             this.radioButtonVitesseTroisCent.UseVisualStyleBackColor = true;
+            this.radioButtonVitesseTroisCent.CheckedChanged += new System.EventHandler(this.radioButtonVitesseTroisCent_CheckedChanged);
             // 
             // radioButtonVitesseDeuxCent
             // 
@@ -92,21 +92,20 @@
             this.radioButtonVitesseDeuxCent.Name = "radioButtonVitesseDeuxCent";
             this.radioButtonVitesseDeuxCent.Size = new System.Drawing.Size(43, 17);
             this.radioButtonVitesseDeuxCent.TabIndex = 1;
-            this.radioButtonVitesseDeuxCent.TabStop = true;
             this.radioButtonVitesseDeuxCent.Text = "200";
             this.radioButtonVitesseDeuxCent.UseVisualStyleBackColor = true;
+            this.radioButtonVitesseDeuxCent.CheckedChanged += new System.EventHandler(this.radioButtonVitesseDeuxCent_CheckedChanged);
             // 
             // radioButtonVitesseCent
             // 
             this.radioButtonVitesseCent.AutoSize = true;
-            this.radioButtonVitesseCent.Checked = true;
             this.radioButtonVitesseCent.Location = new System.Drawing.Point(13, 31);
             this.radioButtonVitesseCent.Name = "radioButtonVitesseCent";
             this.radioButtonVitesseCent.Size = new System.Drawing.Size(43, 17);
             this.radioButtonVitesseCent.TabIndex = 0;
-            this.radioButtonVitesseCent.TabStop = true;
             this.radioButtonVitesseCent.Text = "100";
             this.radioButtonVitesseCent.UseVisualStyleBackColor = true;
+            this.radioButtonVitesseCent.CheckedChanged += new System.EventHandler(this.radioButtonVitesseCent_CheckedChanged);
             // 
             // groupBoxTemperature
             // 
@@ -127,9 +126,9 @@
             this.radioButtonTemperatureCent.Name = "radioButtonTemperatureCent";
             this.radioButtonTemperatureCent.Size = new System.Drawing.Size(43, 17);
             this.radioButtonTemperatureCent.TabIndex = 5;
-            this.radioButtonTemperatureCent.TabStop = true;
             this.radioButtonTemperatureCent.Text = "100";
             this.radioButtonTemperatureCent.UseVisualStyleBackColor = true;
+            this.radioButtonTemperatureCent.CheckedChanged += new System.EventHandler(this.radioButtonTemperatureCent_CheckedChanged);
             // 
             // radioButtonTemperaturQuatreVingt
             // 
@@ -138,21 +137,20 @@
             this.radioButtonTemperaturQuatreVingt.Name = "radioButtonTemperaturQuatreVingt";
             this.radioButtonTemperaturQuatreVingt.Size = new System.Drawing.Size(37, 17);
             this.radioButtonTemperaturQuatreVingt.TabIndex = 4;
-            this.radioButtonTemperaturQuatreVingt.TabStop = true;
             this.radioButtonTemperaturQuatreVingt.Text = "80";
             this.radioButtonTemperaturQuatreVingt.UseVisualStyleBackColor = true;
+            this.radioButtonTemperaturQuatreVingt.CheckedChanged += new System.EventHandler(this.radioButtonTemperaturQuatreVingt_CheckedChanged);
             // 
             // radioButtonTemperaturCinquante
             // 
             this.radioButtonTemperaturCinquante.AutoSize = true;
-            this.radioButtonTemperaturCinquante.Checked = true;
             this.radioButtonTemperaturCinquante.Location = new System.Drawing.Point(13, 33);
             this.radioButtonTemperaturCinquante.Name = "radioButtonTemperaturCinquante";
             this.radioButtonTemperaturCinquante.Size = new System.Drawing.Size(37, 17);
             this.radioButtonTemperaturCinquante.TabIndex = 3;
-            this.radioButtonTemperaturCinquante.TabStop = true;
             this.radioButtonTemperaturCinquante.Text = "50";
             this.radioButtonTemperaturCinquante.UseVisualStyleBackColor = true;
+            this.radioButtonTemperaturCinquante.CheckedChanged += new System.EventHandler(this.radioButtonTemperaturCinquante_CheckedChanged);
             // 
             // buttonOk
             // 
@@ -245,6 +243,7 @@
             this.Controls.Add(this.groupBoxVitesse);
             this.Name = "Appli1";
             this.Text = "Appli";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Appli1_FormClosing);
             this.groupBoxVitesse.ResumeLayout(false);
             this.groupBoxVitesse.PerformLayout();
             this.groupBoxTemperature.ResumeLayout(false);
