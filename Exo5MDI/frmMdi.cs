@@ -49,13 +49,11 @@ namespace Exo5MDI
 
         public void fermeChrono()
         {
-            frmChronoToolStripMenuItem.Checked = false;
             frmChr = null;
         }
 
         public void fermeRandom()
         {
-            frmRandomToolStripMenuItem.Checked = false;
             frmR = null;
         }
 
@@ -73,7 +71,6 @@ namespace Exo5MDI
                 frmChr.Show();
             }
             frmChr.textBoxChrono.Text = frmPrinc.textBoxChrono.Text;
-            frmChronoToolStripMenuItem.Checked = true;
         }
 
         private void nombreToolStripMenuItem_Click(object sender, EventArgs e)
@@ -91,7 +88,6 @@ namespace Exo5MDI
                 frmR.Show();
             }
             frmR.textBoxAleatoire.Text = frmPrinc.textBoxNombreAleatoire.Text;
-            frmRandomToolStripMenuItem.Checked = true;
         }
 
         private void quitterToolStripMenuItem_Click(object sender, EventArgs e)
