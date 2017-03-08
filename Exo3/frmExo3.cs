@@ -57,6 +57,7 @@ namespace Exo3
                 }
                 buttonDeleteOne.Enabled = true;
                 buttonDeleteAll.Enabled = true;
+                buttonAddOne.Enabled = false;
             }
         }
 
@@ -109,6 +110,7 @@ namespace Exo3
                     buttonDeleteAll.Enabled = false;
                 }
                 buttonAddAll.Enabled = true;
+                buttonDeleteOne.Enabled = false;
             }
         }
 
@@ -159,6 +161,7 @@ namespace Exo3
             {
                 buttonUp.Enabled = true;
                 buttonDown.Enabled = true;
+                buttonDeleteOne.Enabled = true;
             }
             else
             {
