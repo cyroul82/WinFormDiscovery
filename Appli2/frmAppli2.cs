@@ -10,11 +10,11 @@ using System.Windows.Forms;
 
 namespace Appli2
 {
-    public partial class frmAppli1 : Form
+    public partial class frmAppli2 : Form
     {
         private String speed;
         private String temp;
-        public frmAppli1()
+        public frmAppli2()
         {
             InitializeComponent();
             radioButtonTemperaturCinquante.Checked = true;

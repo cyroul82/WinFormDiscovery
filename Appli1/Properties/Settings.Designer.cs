@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Appli1.Properties
+namespace Appli2.Properties
 {
 
 

@@ -1,6 +1,6 @@
 ﻿namespace Appli2
 {
-    partial class frmAppli1
+    partial class frmAppli2
     {
         /// <summary>
         /// Variable nécessaire au concepteur.
@@ -230,7 +230,7 @@
             this.labelVitesse.TabIndex = 0;
             this.labelVitesse.Text = "Vitesse : ";
             // 
-            // Appli1
+            // Appli2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -241,7 +241,7 @@
             this.Controls.Add(this.buttonOk);
             this.Controls.Add(this.groupBoxTemperature);
             this.Controls.Add(this.groupBoxVitesse);
-            this.Name = "Appli1";
+            this.Name = "Appli2";
             this.Text = "Appli";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Appli1_FormClosing);
             this.groupBoxVitesse.ResumeLayout(false);
