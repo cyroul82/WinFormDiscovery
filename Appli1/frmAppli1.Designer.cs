@@ -1,6 +1,6 @@
 ﻿namespace Appli1
 {
-    partial class Appli1
+    partial class frmAppli1
     {
         /// <summary>
         /// Variable nécessaire au concepteur.

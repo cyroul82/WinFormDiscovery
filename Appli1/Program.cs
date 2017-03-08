@@ -16,7 +16,7 @@ namespace Appli1
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Appli1());
+            Application.Run(new frmAppli1());
         }
     }
 }
