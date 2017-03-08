@@ -99,6 +99,7 @@
             // radioButtonVitesseCent
             // 
             this.radioButtonVitesseCent.AutoSize = true;
+            this.radioButtonVitesseCent.Checked = true;
             this.radioButtonVitesseCent.Location = new System.Drawing.Point(13, 31);
             this.radioButtonVitesseCent.Name = "radioButtonVitesseCent";
             this.radioButtonVitesseCent.Size = new System.Drawing.Size(43, 17);
@@ -144,6 +145,7 @@
             // radioButtonTemperaturCinquante
             // 
             this.radioButtonTemperaturCinquante.AutoSize = true;
+            this.radioButtonTemperaturCinquante.Checked = true;
             this.radioButtonTemperaturCinquante.Location = new System.Drawing.Point(13, 33);
             this.radioButtonTemperaturCinquante.Name = "radioButtonTemperaturCinquante";
             this.radioButtonTemperaturCinquante.Size = new System.Drawing.Size(37, 17);
