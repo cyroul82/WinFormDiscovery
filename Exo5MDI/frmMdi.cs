@@ -33,11 +33,12 @@ namespace Exo5MDI
             }
             else
             {
-                frmChr = new frmChrono();
+                frmChr = new frmChrono(this.frmPrinc);
                 frmChr.MdiParent = this;
-                frmChr.textBoxChrono.Text = frmPrinc.textBoxChrono.Text;
+                
                 frmChr.Show();
             }
+            frmChr.textBoxChrono.Text = frmPrinc.textBoxChrono.Text ;
 
         }
 
@@ -68,11 +69,12 @@ namespace Exo5MDI
             }
             else
             {
-                frmR = new frmRandom();
+                frmR = new frmRandom(frmPrinc);
                 frmR.MdiParent = this;
-                frmR.textBoxAleatoire.Text = frmPrinc.textBoxNombreAleatoire.Text;
+                
                 frmR.Show();
             }
+            frmR.textBoxAleatoire.Text = frmPrinc.textBoxNombreAleatoire.Text;
         }
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
@@ -85,6 +87,16 @@ namespace Exo5MDI
 
         }
 
-        
+        public void fermeChrono()
+        {
+            frmChr = null;
+        }
+
+        public void fermeRandom()
+        {
+            frmR = null;
+        }
+
+
     }
 }

@@ -12,19 +12,22 @@ namespace Exo5MDI
 {
     public partial class frmChrono : Form
     {
-        public frmChrono()
+        private frmExo5 frmPrinc;
+        public frmChrono(frmExo5 f)
         {
             InitializeComponent();
+            frmPrinc = f;
         }
 
         private void btnActualiser_Click(object sender, EventArgs e)
         {
-
+            textBoxChrono.Text = frmPrinc.textBoxChrono.Text;
         }
 
         private void btnFermer_Click(object sender, EventArgs e)
         {
 
+            Close();
         }
 
         private void frmChrono_FormClosing(object sender, FormClosingEventArgs e)
@@ -33,6 +36,10 @@ namespace Exo5MDI
             if (rep == DialogResult.No)
             {
                 e.Cancel = true;
+            }
+            else
+            {
+                ((frmMdi)(frmPrinc.MdiParent)).fermeChrono();
             }
         }
     }

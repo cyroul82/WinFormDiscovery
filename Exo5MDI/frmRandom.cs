@@ -12,9 +12,11 @@ namespace Exo5MDI
 {
     public partial class frmRandom : Form
     {
-        public frmRandom()
+        frmExo5 frmPrinc;
+        public frmRandom(frmExo5 f)
         {
             InitializeComponent();
+            frmPrinc = f;
         }
 
         private void frmRandom_FormClosing(object sender, FormClosingEventArgs e)
@@ -24,6 +26,17 @@ namespace Exo5MDI
             {
                 e.Cancel = true;
             }
+            else
+            {
+                ((frmMdi)frmPrinc.MdiParent).fermeRandom();
+            }
         }
+
+        private void btnFermer_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+       
     }
 }
