@@ -100,8 +100,8 @@
 
         private System.Windows.Forms.Label lblChrono;
         private System.Windows.Forms.Label lblNombreAleatoire;
-        private System.Windows.Forms.TextBox textBoxChrono;
-        private System.Windows.Forms.TextBox textBoxNombreAleatoire;
         private System.Windows.Forms.Timer timer;
+        internal System.Windows.Forms.TextBox textBoxChrono;
+        internal System.Windows.Forms.TextBox textBoxNombreAleatoire;
     }
 }

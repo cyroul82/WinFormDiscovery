@@ -35,6 +35,7 @@ namespace Exo5MDI
             {
                 frmChr = new frmChrono();
                 frmChr.MdiParent = this;
+                frmChr.textBoxChrono.Text = frmPrinc.textBoxChrono.Text;
                 frmChr.Show();
             }
 
@@ -69,6 +70,7 @@ namespace Exo5MDI
             {
                 frmR = new frmRandom();
                 frmR.MdiParent = this;
+                frmR.textBoxAleatoire.Text = frmPrinc.textBoxNombreAleatoire.Text;
                 frmR.Show();
             }
         }

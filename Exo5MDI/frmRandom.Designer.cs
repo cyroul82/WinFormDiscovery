@@ -28,18 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBoxAleatoire = new System.Windows.Forms.TextBox();
             this.lblNombreAleatoire = new System.Windows.Forms.Label();
             this.btnFermer = new System.Windows.Forms.Button();
             this.btnActualiser = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // textBox1
+            // textBoxAleatoire
             // 
-            this.textBox1.Location = new System.Drawing.Point(136, 12);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 7;
+            this.textBoxAleatoire.Location = new System.Drawing.Point(136, 12);
+            this.textBoxAleatoire.Name = "textBoxAleatoire";
+            this.textBoxAleatoire.Size = new System.Drawing.Size(100, 20);
+            this.textBoxAleatoire.TabIndex = 7;
             // 
             // lblNombreAleatoire
             // 
@@ -76,7 +76,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 90);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textBoxAleatoire);
             this.Controls.Add(this.lblNombreAleatoire);
             this.Controls.Add(this.btnFermer);
             this.Controls.Add(this.btnActualiser);
@@ -90,10 +90,9 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label lblNombreAleatoire;
         private System.Windows.Forms.Button btnFermer;
         private System.Windows.Forms.Button btnActualiser;
+        internal System.Windows.Forms.TextBox textBoxAleatoire;
     }
 }

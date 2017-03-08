@@ -31,7 +31,7 @@
             this.btnActualiser = new System.Windows.Forms.Button();
             this.btnFermer = new System.Windows.Forms.Button();
             this.lblChrono = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBoxChrono = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // btnActualiser
@@ -65,19 +65,19 @@
             this.lblChrono.TabIndex = 2;
             this.lblChrono.Text = "Chrono";
             // 
-            // textBox1
+            // textBoxChrono
             // 
-            this.textBox1.Location = new System.Drawing.Point(155, 12);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 3;
+            this.textBoxChrono.Location = new System.Drawing.Point(155, 12);
+            this.textBoxChrono.Name = "textBoxChrono";
+            this.textBoxChrono.Size = new System.Drawing.Size(100, 20);
+            this.textBoxChrono.TabIndex = 3;
             // 
             // frmChrono
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(313, 95);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textBoxChrono);
             this.Controls.Add(this.lblChrono);
             this.Controls.Add(this.btnFermer);
             this.Controls.Add(this.btnActualiser);
@@ -95,6 +95,6 @@
         private System.Windows.Forms.Button btnActualiser;
         private System.Windows.Forms.Button btnFermer;
         private System.Windows.Forms.Label lblChrono;
-        private System.Windows.Forms.TextBox textBox1;
+        internal System.Windows.Forms.TextBox textBoxChrono;
     }
 }
