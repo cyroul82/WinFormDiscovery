@@ -66,8 +66,9 @@
             // quitterToolStripMenuItem
             // 
             this.quitterToolStripMenuItem.Name = "quitterToolStripMenuItem";
-            this.quitterToolStripMenuItem.Size = new System.Drawing.Size(111, 22);
+            this.quitterToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.quitterToolStripMenuItem.Text = "&Quitter";
+            this.quitterToolStripMenuItem.Click += new System.EventHandler(this.quitterToolStripMenuItem_Click);
             // 
             // fenêtreToolStripMenuItem
             // 
@@ -87,12 +88,14 @@
             this.chronoToolStripMenuItem.Name = "chronoToolStripMenuItem";
             this.chronoToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.chronoToolStripMenuItem.Text = "Chrono";
+            this.chronoToolStripMenuItem.Click += new System.EventHandler(this.chronoToolStripMenuItem_Click);
             // 
             // nombreToolStripMenuItem
             // 
             this.nombreToolStripMenuItem.Name = "nombreToolStripMenuItem";
             this.nombreToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.nombreToolStripMenuItem.Text = "&Nombre";
+            this.nombreToolStripMenuItem.Click += new System.EventHandler(this.nombreToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
             // 
@@ -102,8 +105,8 @@
             // frmExo5ToolStripMenuItem
             // 
             this.frmExo5ToolStripMenuItem.Checked = true;
-            this.frmExo5ToolStripMenuItem.CheckOnClick = true;
             this.frmExo5ToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.frmExo5ToolStripMenuItem.Enabled = false;
             this.frmExo5ToolStripMenuItem.Name = "frmExo5ToolStripMenuItem";
             this.frmExo5ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.frmExo5ToolStripMenuItem.Text = "&1 frmExo5";
@@ -111,19 +114,17 @@
             // 
             // frmChronoToolStripMenuItem
             // 
-            this.frmChronoToolStripMenuItem.CheckOnClick = true;
+            this.frmChronoToolStripMenuItem.Enabled = false;
             this.frmChronoToolStripMenuItem.Name = "frmChronoToolStripMenuItem";
             this.frmChronoToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.frmChronoToolStripMenuItem.Text = "&2 frmChrono";
-            this.frmChronoToolStripMenuItem.Click += new System.EventHandler(this.frmChronoToolStripMenuItem_Click);
             // 
             // frmRandomToolStripMenuItem
             // 
-            this.frmRandomToolStripMenuItem.CheckOnClick = true;
+            this.frmRandomToolStripMenuItem.Enabled = false;
             this.frmRandomToolStripMenuItem.Name = "frmRandomToolStripMenuItem";
             this.frmRandomToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.frmRandomToolStripMenuItem.Text = "&3 frmRandom";
-            this.frmRandomToolStripMenuItem.Click += new System.EventHandler(this.frmRandomToolStripMenuItem_Click);
             // 
             // toolStripMenuItem1
             // 

@@ -24,24 +24,6 @@ namespace Exo5MDI
     
         }
 
-        private void frmChronoToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            if(frmChr != null)
-            {
-                frmChr.Activate();
-            }
-            else
-            {
-                frmChr = new frmChrono(this.frmPrinc);
-                frmChr.MdiParent = this;
-                
-                frmChr.Show();
-            }
-            frmChr.textBoxChrono.Text = frmPrinc.textBoxChrono.Text ;
-
-        }
-
-
         private void frmExo5ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if(frmPrinc != null)
@@ -56,22 +38,6 @@ namespace Exo5MDI
             }
         }
 
-        private void frmRandomToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            if(frmR != null)
-            {
-                frmR.Activate();
-            }
-            else
-            {
-                frmR = new frmRandom(frmPrinc);
-                frmR.MdiParent = this;
-                
-                frmR.Show();
-            }
-            frmR.textBoxAleatoire.Text = frmPrinc.textBoxNombreAleatoire.Text;
-        }
-
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
             DialogResult rep = MessageBox.Show("Voulez vous vraiment quitter ?", "Terminer ?", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
@@ -79,19 +45,58 @@ namespace Exo5MDI
             {
                 e.Cancel = true;
             }
-
         }
 
         public void fermeChrono()
         {
+            frmChronoToolStripMenuItem.Checked = false;
             frmChr = null;
         }
 
         public void fermeRandom()
         {
+            frmRandomToolStripMenuItem.Checked = false;
             frmR = null;
         }
 
+        private void chronoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (frmChr != null)
+            {
+                frmChr.Activate();
+            }
+            else
+            {
+                frmChr = new frmChrono(this.frmPrinc);
+                frmChr.MdiParent = this;
 
+                frmChr.Show();
+            }
+            frmChr.textBoxChrono.Text = frmPrinc.textBoxChrono.Text;
+            frmChronoToolStripMenuItem.Checked = true;
+        }
+
+        private void nombreToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (frmR != null)
+            {
+                frmR.Activate();
+                
+            }
+
+            else
+            {
+                frmR = new frmRandom(frmPrinc);
+                frmR.MdiParent = this;
+                frmR.Show();
+            }
+            frmR.textBoxAleatoire.Text = frmPrinc.textBoxNombreAleatoire.Text;
+            frmRandomToolStripMenuItem.Checked = true;
+        }
+
+        private void quitterToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

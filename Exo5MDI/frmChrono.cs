@@ -22,26 +22,17 @@ namespace Exo5MDI
         private void btnActualiser_Click(object sender, EventArgs e)
         {
             frmPrinc.Affiche();
-            textBoxChrono.Text = frmPrinc.textBoxChrono.Text;
+            textBoxChrono.Text = frmPrinc.Chrono.ToString();
         }
 
         private void btnFermer_Click(object sender, EventArgs e)
         {
-
             Close();
         }
 
         private void frmChrono_FormClosing(object sender, FormClosingEventArgs e)
         {
-            DialogResult rep = MessageBox.Show("Voulez vous vraiment quitter ?", "Terminer ?", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            if (rep == DialogResult.No)
-            {
-                e.Cancel = true;
-            }
-            else
-            {
-                ((frmMdi)(frmPrinc.MdiParent)).fermeChrono();
-            }
+            ((frmMdi)(frmPrinc.MdiParent)).fermeChrono();
         }
     }
 }

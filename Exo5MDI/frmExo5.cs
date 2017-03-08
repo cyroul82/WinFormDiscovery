@@ -13,8 +13,8 @@ namespace Exo5MDI
     public partial class frmExo5 : Form
     {
         private System.Random aleat;
-        internal Double nombre;
-        internal Int32 chrono = 0;
+        internal Double Nombre { get; private set; }
+        internal Int32 Chrono { get; private set; } = 0;
         public frmExo5()
         {
             InitializeComponent();
@@ -24,23 +24,16 @@ namespace Exo5MDI
        
         public void Affiche()
         {
-            nombre = aleat.NextDouble();
-            textBoxNombreAleatoire.Text = nombre.ToString();
+            Nombre = aleat.NextDouble();
+            textBoxNombreAleatoire.Text = Nombre.ToString();
 
-            chrono++;
-            textBoxChrono.Text = chrono.ToString();
-
+            Chrono++;
+            textBoxChrono.Text = Chrono.ToString();
         }
-
 
         private void frmExo5_FormClosing(object sender, FormClosingEventArgs e)
         {
-            DialogResult rep = MessageBox.Show("Voulez vous vraiment quitter ?", "Terminer ?", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            if (rep == DialogResult.No)
-            {
-                e.Cancel = true;
-            }
-            
+            Application.Exit();
         }
 
         private void timer_Tick(object sender, EventArgs e)

@@ -21,15 +21,7 @@ namespace Exo5MDI
 
         private void frmRandom_FormClosing(object sender, FormClosingEventArgs e)
         {
-            DialogResult rep = MessageBox.Show("Voulez vous vraiment quitter ?", "Terminer ?", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            if (rep == DialogResult.No)
-            {
-                e.Cancel = true;
-            }
-            else
-            {
-                ((frmMdi)frmPrinc.MdiParent).fermeRandom();
-            }
+            ((frmMdi)frmPrinc.MdiParent).fermeRandom();
         }
 
         private void btnFermer_Click(object sender, EventArgs e)
@@ -40,7 +32,9 @@ namespace Exo5MDI
         private void btnActualiser_Click(object sender, EventArgs e)
         {
             frmPrinc.Affiche();
-            textBoxAleatoire.Text = frmPrinc.textBoxNombreAleatoire.Text;
+            textBoxAleatoire.Text = frmPrinc.Nombre.ToString();
         }
+
+
     }
 }
