@@ -12,7 +12,6 @@ namespace Exo5MDI
 {
     public partial class frmMdi : Form
     {
-
         private frmExo5 frmPrinc;
         private frmChrono frmChr;
         private frmRandom frmR;
@@ -42,10 +41,6 @@ namespace Exo5MDI
 
         }
 
-        private void frmChronoToolStripMenuItem_CheckedChanged(object sender, EventArgs e)
-        {
-            
-        }
 
         private void frmExo5ToolStripMenuItem_Click(object sender, EventArgs e)
         {

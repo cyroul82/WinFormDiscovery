@@ -36,6 +36,7 @@
             // 
             // textBoxAleatoire
             // 
+            this.textBoxAleatoire.Enabled = false;
             this.textBoxAleatoire.Location = new System.Drawing.Point(136, 12);
             this.textBoxAleatoire.Name = "textBoxAleatoire";
             this.textBoxAleatoire.Size = new System.Drawing.Size(100, 20);
@@ -71,6 +72,7 @@
             this.btnActualiser.Tag = " ";
             this.btnActualiser.Text = "Actualiser";
             this.btnActualiser.UseVisualStyleBackColor = true;
+            this.btnActualiser.Click += new System.EventHandler(this.btnActualiser_Click);
             // 
             // frmRandom
             // 

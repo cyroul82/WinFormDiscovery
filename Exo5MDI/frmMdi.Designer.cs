@@ -115,7 +115,6 @@
             this.frmChronoToolStripMenuItem.Name = "frmChronoToolStripMenuItem";
             this.frmChronoToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.frmChronoToolStripMenuItem.Text = "&2 frmChrono";
-            this.frmChronoToolStripMenuItem.CheckedChanged += new System.EventHandler(this.frmChronoToolStripMenuItem_CheckedChanged);
             this.frmChronoToolStripMenuItem.Click += new System.EventHandler(this.frmChronoToolStripMenuItem_Click);
             // 
             // frmRandomToolStripMenuItem

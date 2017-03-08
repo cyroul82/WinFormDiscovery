@@ -37,6 +37,10 @@ namespace Exo5MDI
             Close();
         }
 
-       
+        private void btnActualiser_Click(object sender, EventArgs e)
+        {
+            frmPrinc.Affiche();
+            textBoxAleatoire.Text = frmPrinc.textBoxNombreAleatoire.Text;
+        }
     }
 }

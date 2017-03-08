@@ -22,7 +22,7 @@ namespace Exo5MDI
             this.Affiche();
         }
        
-        private void Affiche()
+        public void Affiche()
         {
             nombre = aleat.NextDouble();
             textBoxNombreAleatoire.Text = nombre.ToString();

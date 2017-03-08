@@ -67,6 +67,7 @@
             // 
             // textBoxChrono
             // 
+            this.textBoxChrono.Enabled = false;
             this.textBoxChrono.Location = new System.Drawing.Point(155, 12);
             this.textBoxChrono.Name = "textBoxChrono";
             this.textBoxChrono.Size = new System.Drawing.Size(100, 20);
