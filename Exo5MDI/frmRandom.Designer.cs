@@ -86,7 +86,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "frmRandom";
             this.Text = "frmRandom";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmRandom_FormClosing);
+            this.Activated += new System.EventHandler(this.frmRandom_Activated);
             this.ResumeLayout(false);
             this.PerformLayout();
 

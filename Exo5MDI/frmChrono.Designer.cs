@@ -85,7 +85,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "frmChrono";
             this.Text = "frmChrono";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmChrono_FormClosing);
+            this.Activated += new System.EventHandler(this.frmChrono_Activated);
             this.ResumeLayout(false);
             this.PerformLayout();
 

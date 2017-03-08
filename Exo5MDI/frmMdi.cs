@@ -21,7 +21,6 @@ namespace Exo5MDI
             frmPrinc = new frmExo5();
             frmPrinc.MdiParent = this;
             frmPrinc.Show();
-    
         }
 
         private void frmExo5ToolStripMenuItem_Click(object sender, EventArgs e)
@@ -47,13 +46,13 @@ namespace Exo5MDI
             }
         }
 
-        public void fermeChrono()
+        public void fermeChrono(object sender, FormClosingEventArgs e)
         {
             frmChronoToolStripMenuItem.Checked = false;
             frmChr = null;
         }
 
-        public void fermeRandom()
+        public void fermeRandom(object sender, FormClosingEventArgs e)
         {
             frmRandomToolStripMenuItem.Checked = false;
             frmR = null;
@@ -69,7 +68,8 @@ namespace Exo5MDI
             {
                 frmChr = new frmChrono();
                 frmChr.MdiParent = this;
-                frmChr.FormClosing += new FormClosingEventHandler(this, fermeChrono());
+                frmChr.FormClosing += new FormClosingEventHandler(this.fermeChrono);
+                //frmChr.
                 frmChr.Show();
             }
             frmChr.textBoxChrono.Text = frmPrinc.textBoxChrono.Text;
@@ -81,13 +81,12 @@ namespace Exo5MDI
             if (frmR != null)
             {
                 frmR.Activate();
-                
             }
-
             else
             {
                 frmR = new frmRandom();
                 frmR.MdiParent = this;
+                frmR.FormClosing += new FormClosingEventHandler(this.fermeRandom);
                 frmR.Show();
             }
             frmR.textBoxAleatoire.Text = frmPrinc.textBoxNombreAleatoire.Text;

@@ -13,8 +13,8 @@ namespace Exo5MDI
     public partial class frmExo5 : Form
     {
         private System.Random aleat;
-        internal Double Nombre { get; private set; }
-        internal Int32 Chrono { get; private set; } = 0;
+        private Double Nombre { get; set; }
+        private Int32 Chrono { get; set; } = 0;
         public frmExo5()
         {
             InitializeComponent();

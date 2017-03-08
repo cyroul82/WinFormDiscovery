@@ -17,11 +17,6 @@ namespace Exo5MDI
             InitializeComponent();
         }
 
-        private void frmRandom_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            ((frmMdi)frmPrinc.MdiParent).fermeRandom();
-        }
-
         private void btnFermer_Click(object sender, EventArgs e)
         {
             Close();
@@ -29,10 +24,17 @@ namespace Exo5MDI
 
         private void btnActualiser_Click(object sender, EventArgs e)
         {
-            frmPrinc.Affiche();
-            textBoxAleatoire.Text = frmPrinc.Nombre.ToString();
+            affiche();
         }
 
+        private void frmRandom_Activated(object sender, EventArgs e)
+        {
+            affiche();
+        }
 
+        private void affiche()
+        {
+            textBoxAleatoire.Text = Donnees.LeNombre.ToString();
+        }
     }
 }

@@ -19,8 +19,7 @@ namespace Exo5MDI
 
         private void btnActualiser_Click(object sender, EventArgs e)
         {
-            frmPrinc.Affiche();
-            textBoxChrono.Text = frmPrinc.Chrono.ToString();
+            affiche();
         }
 
         private void btnFermer_Click(object sender, EventArgs e)
@@ -28,9 +27,14 @@ namespace Exo5MDI
             Close();
         }
 
-        private void frmChrono_FormClosing(object sender, FormClosingEventArgs e)
+        private void affiche()
         {
-            ((frmMdi)(frmPrinc.MdiParent)).fermeChrono();
+            textBoxChrono.Text = Donnees.LeTemps.ToString();
+        }
+
+        private void frmChrono_Activated(object sender, EventArgs e)
+        {
+            affiche();
         }
     }
 }
