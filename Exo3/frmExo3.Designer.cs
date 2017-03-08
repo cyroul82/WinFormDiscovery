@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmExo3));
             this.comboBoxSource = new System.Windows.Forms.ComboBox();
             this.labelSource = new System.Windows.Forms.Label();
             this.buttonAddOne = new System.Windows.Forms.Button();
@@ -115,22 +116,22 @@
             // buttonUp
             // 
             this.buttonUp.Enabled = false;
-            this.buttonUp.Location = new System.Drawing.Point(233, 222);
+            this.buttonUp.Image = ((System.Drawing.Image)(resources.GetObject("buttonUp.Image")));
+            this.buttonUp.Location = new System.Drawing.Point(248, 223);
             this.buttonUp.Name = "buttonUp";
-            this.buttonUp.Size = new System.Drawing.Size(37, 23);
+            this.buttonUp.Size = new System.Drawing.Size(40, 40);
             this.buttonUp.TabIndex = 8;
-            this.buttonUp.Text = "Up";
             this.buttonUp.UseVisualStyleBackColor = true;
             this.buttonUp.Click += new System.EventHandler(this.buttonUp_Click);
             // 
             // buttonDown
             // 
             this.buttonDown.Enabled = false;
-            this.buttonDown.Location = new System.Drawing.Point(317, 222);
+            this.buttonDown.Image = ((System.Drawing.Image)(resources.GetObject("buttonDown.Image")));
+            this.buttonDown.Location = new System.Drawing.Point(294, 223);
             this.buttonDown.Name = "buttonDown";
-            this.buttonDown.Size = new System.Drawing.Size(37, 23);
+            this.buttonDown.Size = new System.Drawing.Size(40, 40);
             this.buttonDown.TabIndex = 9;
-            this.buttonDown.Text = "Dn";
             this.buttonDown.UseVisualStyleBackColor = true;
             this.buttonDown.Click += new System.EventHandler(this.buttonDown_Click);
             // 
@@ -147,7 +148,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(366, 261);
+            this.ClientSize = new System.Drawing.Size(366, 273);
             this.Controls.Add(this.listBoxCible);
             this.Controls.Add(this.buttonDown);
             this.Controls.Add(this.buttonUp);
@@ -158,6 +159,7 @@
             this.Controls.Add(this.buttonAddOne);
             this.Controls.Add(this.labelSource);
             this.Controls.Add(this.comboBoxSource);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "frmExo3";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
