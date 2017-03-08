@@ -12,11 +12,9 @@ namespace Exo5MDI
 {
     public partial class frmChrono : Form
     {
-        private frmExo5 frmPrinc;
-        public frmChrono(frmExo5 f)
+        public frmChrono()
         {
             InitializeComponent();
-            frmPrinc = f;
         }
 
         private void btnActualiser_Click(object sender, EventArgs e)

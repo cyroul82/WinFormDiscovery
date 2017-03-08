@@ -24,11 +24,11 @@ namespace Exo5MDI
        
         public void Affiche()
         {
-            Nombre = aleat.NextDouble();
-            textBoxNombreAleatoire.Text = Nombre.ToString();
+            Donnees.LeNombre = aleat.NextDouble();
+            textBoxNombreAleatoire.Text = Donnees.LeNombre.ToString();
 
-            Chrono++;
-            textBoxChrono.Text = Chrono.ToString();
+            Donnees.LeNombre++;
+            textBoxChrono.Text = Donnees.LeNombre.ToString();
         }
 
         private void frmExo5_FormClosing(object sender, FormClosingEventArgs e)

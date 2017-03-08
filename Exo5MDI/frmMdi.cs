@@ -67,9 +67,9 @@ namespace Exo5MDI
             }
             else
             {
-                frmChr = new frmChrono(this.frmPrinc);
+                frmChr = new frmChrono();
                 frmChr.MdiParent = this;
-
+                frmChr.FormClosing += new FormClosingEventHandler(this, fermeChrono());
                 frmChr.Show();
             }
             frmChr.textBoxChrono.Text = frmPrinc.textBoxChrono.Text;
@@ -86,7 +86,7 @@ namespace Exo5MDI
 
             else
             {
-                frmR = new frmRandom(frmPrinc);
+                frmR = new frmRandom();
                 frmR.MdiParent = this;
                 frmR.Show();
             }
