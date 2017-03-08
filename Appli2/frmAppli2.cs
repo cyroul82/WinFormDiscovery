@@ -17,15 +17,20 @@ namespace Appli2
         public frmAppli2()
         {
             InitializeComponent();
-            radioButtonTemperaturCinquante.Checked = true;
-            radioButtonVitesseCent.Checked = true;
+            SetDefaultValueComboBox();
             
+        }
+
+        private void SetDefaultValueComboBox()
+        {
+            comboBoxVitesse.SelectedIndex = 0;
+            comboBoxTemperature.SelectedIndex = 0;
         }
 
         private void SetEnableGroupBoxTempAndSpeed(Boolean b)
         {
-            groupBoxTemperature.Enabled = b;
-            groupBoxVitesse.Enabled = b;
+            comboBoxVitesse.Enabled = b;
+            comboBoxTemperature.Enabled = b;
         }
 
         private void buttonQuitter_Click(object sender, EventArgs e)
@@ -38,8 +43,7 @@ namespace Appli2
             if (groupBoxParametre.Visible == Visible)
             {   
                 groupBoxParametre.Visible = false;
-                radioButtonTemperaturCinquante.Checked = true;
-                radioButtonVitesseCent.Checked = true;
+                SetDefaultValueComboBox();
                 SetEnableGroupBoxTempAndSpeed(true);
             }
         }
@@ -55,63 +59,6 @@ namespace Appli2
             }
         }
 
-        private void radioButtonVitesseCent_CheckedChanged(object sender, EventArgs e)
-        {
-            if (radioButtonVitesseCent.Checked)
-            {
-                speed = radioButtonVitesseCent.Text;
-            }
-        }
-
-        private void radioButtonVitesseDeuxCent_CheckedChanged(object sender, EventArgs e)
-        {
-            if (radioButtonVitesseDeuxCent.Checked)
-            {
-                speed = radioButtonVitesseDeuxCent.Text;
-            }
-        }
-
-        private void radioButtonVitesseTroisCent_CheckedChanged(object sender, EventArgs e)
-        {
-            if (radioButtonVitesseTroisCent.Checked)
-            {
-                speed = radioButtonVitesseTroisCent.Text;
-            }
-        }
-
-        private void radioButtonVitesseCinqCent_CheckedChanged(object sender, EventArgs e)
-        {
-            if (radioButtonVitesseCinqCent.Checked)
-            {
-                speed = radioButtonVitesseCinqCent.Text;
-            }
-        }
-
-
-
-        private void radioButtonTemperaturQuatreVingt_CheckedChanged(object sender, EventArgs e)
-        {
-            if (radioButtonTemperaturQuatreVingt.Checked)
-            {
-                temp = radioButtonTemperaturQuatreVingt.Text;
-            }
-        }
-
-        private void radioButtonTemperatureCent_CheckedChanged(object sender, EventArgs e)
-        {
-            if (radioButtonTemperatureCent.Checked)
-            {
-                temp = radioButtonTemperatureCent.Text;
-            }
-        }
-
-        private void radioButtonTemperaturCinquante_CheckedChanged(object sender, EventArgs e)
-        {
-            if (radioButtonTemperaturCinquante.Checked)
-            {
-                temp = radioButtonTemperaturCinquante.Text;
-            }
-        }
 
         private void Appli1_FormClosing(object sender, FormClosingEventArgs e)
         {
@@ -123,5 +70,14 @@ namespace Appli2
 
         }
 
+        private void comboBoxVitesse_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            speed = comboBoxVitesse.SelectedItem.ToString();
+        }
+
+        private void comboBoxTemperature_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            temp = comboBoxTemperature.SelectedItem.ToString();
+        }
     }
 }
