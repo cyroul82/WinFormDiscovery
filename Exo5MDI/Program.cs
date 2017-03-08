@@ -16,7 +16,7 @@ namespace Exo5MDI
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Exo5MDI());
+            Application.Run(new frmMdi());
         }
     }
 }

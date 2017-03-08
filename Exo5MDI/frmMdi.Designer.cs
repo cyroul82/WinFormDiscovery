@@ -1,6 +1,6 @@
 ﻿namespace Exo5MDI
 {
-    partial class Exo5MDI
+    partial class frmMdi
     {
         /// <summary>
         /// Required designer variable.
