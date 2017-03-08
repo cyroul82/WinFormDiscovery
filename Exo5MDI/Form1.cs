@@ -12,11 +12,13 @@ namespace Exo5MDI
 {
     public partial class Form1 : Form
     {
-        
+
+        private frmExo5 frmPrinc;
+        private frmChrono frmChr;
+        private frmRandom frmR;
         public Form1()
         {
             InitializeComponent();
-            frmExo5 frmPrinc;
             frmPrinc = new frmExo5();
             frmPrinc.MdiParent = this;
             frmPrinc.Show();
@@ -26,12 +28,10 @@ namespace Exo5MDI
 
         private void frmChronoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
-                frmChrono frmChr = new frmChrono();
                 frmChr = new frmChrono();
                 frmChr.MdiParent = this;
                 frmChr.Show();
-
+            
         }
 
         private void frmChronoToolStripMenuItem_CheckedChanged(object sender, EventArgs e)

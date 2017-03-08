@@ -28,10 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.lblChrono = new System.Windows.Forms.Label();
             this.lblNombreAleatoire = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBoxChrono = new System.Windows.Forms.TextBox();
+            this.textBoxNombreAleatoire = new System.Windows.Forms.TextBox();
+            this.timer = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // lblChrono
@@ -54,31 +56,35 @@
             this.lblNombreAleatoire.TabIndex = 1;
             this.lblNombreAleatoire.Text = "Nombre Aléatoire";
             // 
-            // textBox1
+            // textBoxChrono
             // 
-            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.Enabled = false;
-            this.textBox1.Location = new System.Drawing.Point(119, 35);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(167, 20);
-            this.textBox1.TabIndex = 2;
+            this.textBoxChrono.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBoxChrono.Enabled = false;
+            this.textBoxChrono.Location = new System.Drawing.Point(119, 35);
+            this.textBoxChrono.Name = "textBoxChrono";
+            this.textBoxChrono.Size = new System.Drawing.Size(167, 20);
+            this.textBoxChrono.TabIndex = 2;
             // 
-            // textBox2
+            // textBoxNombreAleatoire
             // 
-            this.textBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox2.Enabled = false;
-            this.textBox2.Location = new System.Drawing.Point(119, 63);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(167, 20);
-            this.textBox2.TabIndex = 3;
+            this.textBoxNombreAleatoire.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBoxNombreAleatoire.Enabled = false;
+            this.textBoxNombreAleatoire.Location = new System.Drawing.Point(119, 63);
+            this.textBoxNombreAleatoire.Name = "textBoxNombreAleatoire";
+            this.textBoxNombreAleatoire.Size = new System.Drawing.Size(167, 20);
+            this.textBoxNombreAleatoire.TabIndex = 3;
+            // 
+            // timer
+            // 
+            this.timer.Tick += new System.EventHandler(this.timer_Tick);
             // 
             // frmExo5
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(327, 117);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textBoxNombreAleatoire);
+            this.Controls.Add(this.textBoxChrono);
             this.Controls.Add(this.lblNombreAleatoire);
             this.Controls.Add(this.lblChrono);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
@@ -95,7 +101,8 @@
 
         private System.Windows.Forms.Label lblChrono;
         private System.Windows.Forms.Label lblNombreAleatoire;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBoxChrono;
+        private System.Windows.Forms.TextBox textBoxNombreAleatoire;
+        private System.Windows.Forms.Timer timer;
     }
 }
