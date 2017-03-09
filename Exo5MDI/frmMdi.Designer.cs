@@ -121,7 +121,7 @@
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "frmMdi";
-            this.Text = "Form1";
+            this.Text = "Exo5Mdi";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmMdi_FormClosing);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
