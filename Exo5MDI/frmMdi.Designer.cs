@@ -81,21 +81,21 @@
             // chronoToolStripMenuItem
             // 
             this.chronoToolStripMenuItem.Name = "chronoToolStripMenuItem";
-            this.chronoToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.chronoToolStripMenuItem.Size = new System.Drawing.Size(118, 22);
             this.chronoToolStripMenuItem.Text = "Chrono";
             this.chronoToolStripMenuItem.Click += new System.EventHandler(this.chronoToolStripMenuItem_Click);
             // 
             // nombreToolStripMenuItem
             // 
             this.nombreToolStripMenuItem.Name = "nombreToolStripMenuItem";
-            this.nombreToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.nombreToolStripMenuItem.Size = new System.Drawing.Size(118, 22);
             this.nombreToolStripMenuItem.Text = "&Nombre";
             this.nombreToolStripMenuItem.Click += new System.EventHandler(this.nombreToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(149, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(115, 6);
             // 
             // toolStripMenuItem1
             // 
@@ -122,7 +122,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "frmMdi";
             this.Text = "Form1";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmMdi_FormClosing);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);

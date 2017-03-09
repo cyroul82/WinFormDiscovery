@@ -31,14 +31,11 @@ namespace Exo5MDI
             textBoxChrono.Text = Donnees.Chrono.ToString();
         }
 
-        private void frmExo5_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            Application.Exit();
-        }
-
         private void timer_Tick(object sender, EventArgs e)
         {
             this.Affiche();
         }
+
+       
     }
 }

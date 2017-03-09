@@ -15,17 +15,22 @@ namespace Exo5MDI
         private frmExo5 frmPrinc;
         private frmChrono frmChr;
         private frmRandom frmR;
+        private Boolean flag = false;
         public frmMdi()
         {
             InitializeComponent();
+            
             frmPrinc = new frmExo5();
             frmPrinc.MdiParent = this;
+            //this.FormClosing += new FormClosingEventHandler(this.fermeApp);
+            frmPrinc.FormClosing += new FormClosingEventHandler(this.fermeApp);
+            frmPrinc.FormClosed += new FormClosedEventHandler(this.closeMainApp);
             frmPrinc.Show();
         }
 
         private void frmExo5ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if(frmPrinc != null)
+            if (frmPrinc != null)
             {
                 frmPrinc.Activate();
             }
@@ -33,16 +38,8 @@ namespace Exo5MDI
             {
                 frmPrinc = new frmExo5();
                 frmPrinc.MdiParent = this;
+                //frmPrinc.FormClosing += new FormClosingEventHandler(this.fermeApp);
                 frmPrinc.Show();
-            }
-        }
-
-        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            DialogResult rep = MessageBox.Show("Voulez vous vraiment quitter ?", "Terminer ?", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            if (rep == DialogResult.No)
-            {
-                e.Cancel = true;
             }
         }
 
@@ -93,10 +90,29 @@ namespace Exo5MDI
             Close();
         }
 
+        private void fermeApp(object sender, FormClosingEventArgs e)
+        {
+                DialogResult rep = MessageBox.Show("Voulez vous vraiment quitter?", "Terminer ?", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (rep == DialogResult.No)
+                {
+                    e.Cancel = true;
+                }
+
+        }
+        private void closeMainApp(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
+
         private void aPropsToolStripMenuItem_Click(object sender, EventArgs e)
         {
             AboutBox ab = new AboutBox();
             ab.ShowDialog();
+        }
+
+        private void frmMdi_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            
         }
     }
 }
