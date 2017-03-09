@@ -22,7 +22,6 @@ namespace Exo5MDI
             
             frmPrinc = new frmExo5();
             frmPrinc.MdiParent = this;
-            //this.FormClosing += new FormClosingEventHandler(this.fermeApp);
             frmPrinc.FormClosing += new FormClosingEventHandler(this.fermeApp);
             frmPrinc.FormClosed += new FormClosedEventHandler(this.closeMainApp);
             frmPrinc.Show();
@@ -38,7 +37,6 @@ namespace Exo5MDI
             {
                 frmPrinc = new frmExo5();
                 frmPrinc.MdiParent = this;
-                //frmPrinc.FormClosing += new FormClosingEventHandler(this.fermeApp);
                 frmPrinc.Show();
             }
         }
