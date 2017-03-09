@@ -19,7 +19,6 @@ namespace Appli2
             InitializeComponent();
             radioButtonTemperaturCinquante.Checked = true;
             radioButtonVitesseCent.Checked = true;
-            
         }
 
         private void SetEnableGroupBoxTempAndSpeed(Boolean b)
@@ -46,6 +45,7 @@ namespace Appli2
 
         private void buttonOk_Click(object sender, EventArgs e)
         {
+
             if (groupBoxParametre.Visible != Visible)
             {
                 textBoxVitesse.Text = speed;

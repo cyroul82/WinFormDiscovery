@@ -15,7 +15,6 @@ namespace Exo5MDI
         private frmExo5 frmPrinc;
         private frmChrono frmChr;
         private frmRandom frmR;
-        private Boolean flag = false;
         public frmMdi()
         {
             InitializeComponent();

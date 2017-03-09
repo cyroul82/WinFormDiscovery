@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Appli1", "Appli1\Appli1.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Appli2", "Appli2\Appli2.csproj", "{CF0FF7D0-E036-412C-A2CD-2019F9E69191}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exo5MDI_wpf", "Exo5MDI_wpf\Exo5MDI_wpf.csproj", "{CEAE0F51-31C8-4301-B5C8-3617F5D9AA74}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{CF0FF7D0-E036-412C-A2CD-2019F9E69191}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CF0FF7D0-E036-412C-A2CD-2019F9E69191}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CF0FF7D0-E036-412C-A2CD-2019F9E69191}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CEAE0F51-31C8-4301-B5C8-3617F5D9AA74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CEAE0F51-31C8-4301-B5C8-3617F5D9AA74}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CEAE0F51-31C8-4301-B5C8-3617F5D9AA74}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CEAE0F51-31C8-4301-B5C8-3617F5D9AA74}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
